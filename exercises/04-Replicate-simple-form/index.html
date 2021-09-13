@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>4Geeks Academy</title>
-</head>
-<body>
-<form>
-<!-- your code here -->
-</form>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
+		<style>
+			table,
+			td,
+			th {
+				border: 1px solid grey;
+			}
+
+			table th {
+				background-color: cornflowerblue;
+			}
+
+			#submit {
+				background-color: grey;
+			}
+
+			#sub {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<!-- your code here -->
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Value</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>
+						<input type="text" />
+					</td>
+				</tr>
+				<tr>
+					<td>Sex</td>
+					<td>
+						<input type="radio" name="sex" value="Male" />
+						<label for="Male">Male</label><br />
+						<input type="radio" name="sex" value="Female" />
+						<label for="Female">Female</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Eye color</td>
+					<td>
+						<select name="colors" id="colors">
+							<option value="green">green</option>
+							<option value="blue">blue</option>
+							<option value="black">black</option>
+							<option value="brown">brown</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Check all that apply</td>
+					<td>
+						<input type="checkbox" id="opt1" value="opt1" />Over 6 feet tall<br />
+						<input type="checkbox" id="opt2" value="opt2" />Over 200 pounds
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label for="Text">Describe your athletic ability:</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea name="textarea" rows="10" cols="50"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" id="sub"><input type="submit" name="submit" id="submit" value="Enter my information" /></td>
+				</tr>
+			</table>
+		</form>
+	</body>
 </html>
